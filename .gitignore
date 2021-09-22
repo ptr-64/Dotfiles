@@ -1,0 +1,32 @@
+# intermediate tex files
+*.bcf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.blg
+*run.xml
+*.nav
+*.out
+
+#Data files
+*.csv*
+*.xml
+*.dta*
+*.dat
+*.sql
+
+# Folder view files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# External disk files...
+.Trashes
+.Spotlight-V100
