@@ -1,9 +1,6 @@
 # Make vim the default editor
 export EDITOR='vim';
 
-# Choose default terminal-- meh don't bother
-#export TERMINAL='kitty'
-
 # Language preferences
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';

@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-#export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$PATH";
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Load the shell dotfiles, and then some:
@@ -21,7 +21,6 @@ shopt -s nocaseglob;
 shopt -s histappend;
 #export GPG_TTY=$(tty)
 
-# pyenv python 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# activate Pyenv from here...
+eval "$(pyenv init -)"  
+eval "$(pyenv virtualenv-init -)"

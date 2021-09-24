@@ -53,9 +53,11 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install essential apps
+brew install pyenv
+brew install tmux
+brew install openconnect
 brew install --cask signal
 brew install --cask r
-brew install pyenv
 brew install --cask firefox
 brew install --cask mactex # takes a while...
 brew install --cask anki
@@ -63,7 +65,7 @@ brew install --cask rectangle
 brew install --cask bitwarden
 brew install --cask dropbox
 brew install --cask microsoft-remote-desktop
-brew install openconnect
+brew install --cask netnewswire
 
 # Install other useful binaries.
 brew install ack

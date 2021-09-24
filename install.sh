@@ -15,6 +15,7 @@ ln -sf /Users/"$USER"/dotfiles/.Rprofile /Users/"$USER"/.Rprofile
 ln -sf /Users/"$USER"/dotfiles/.tmux.conf /Users/"$USER"/.tmux.conf
 ln -sf /Users/"$USER"/dotfiles/.vimrc /Users/"$USER"/.vimrc
 ln -sf /Users/"$USER"/dotfiles/.vim /Users/"$USER"/.vim
+ln -sf /Users/"$USER"/dotfiles/.profile /Users/"$USER"/.profile
 
 # run vim once to allow the plugins to get installed.
 
