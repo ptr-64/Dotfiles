@@ -39,7 +39,7 @@ brew install wget
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim --with-override-system-vim --enable-gui
 brew install grep
 brew install openssh
 brew install screen
