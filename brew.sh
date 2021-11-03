@@ -15,7 +15,7 @@ BREW_PREFIX=$(brew --prefix)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
-
+export PATH=$PATH:$(brew --prefix coreutils)/libexec/gnubin
 # Install some other useful utilities like `sponge`.
 #brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
@@ -39,12 +39,8 @@ brew install wget
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vim --enable-gui
 brew install grep
 brew install openssh
-brew install screen
-brew install php
-brew install gmp
 
 # Install font tools.
 #brew tap bramstein/webfonttools
@@ -53,9 +49,9 @@ brew install gmp
 #brew install woff2
 
 # Install essential apps
-brew install openssl readline sqlite3 xz zlib
 brew install pyenv
 brew install tmux
+brew install vim --with-override-system-vim --enable-gui
 brew install openconnect
 brew install --cask signal
 brew install --cask r
@@ -67,22 +63,11 @@ brew install --cask bitwarden
 brew install --cask dropbox
 brew install --cask microsoft-remote-desktop
 brew install --cask netnewswire
+brew install --cask inkscape
 
 # Install other useful binaries.
-brew install ack
 brew install git
-brew install gs
-brew install imagemagick --with-webp
 brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install rename
-brew install rlwrap
-brew install ssh-copy-id
-brew install tree
-brew install vbindiff
-brew install zopfli
-
+brew install julia
 # Remove outdated versions from the cellar.
 brew cleanup

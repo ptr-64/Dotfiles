@@ -13,7 +13,8 @@ options(prompt = "R~> ",
         warnPartialMatchDollar = TRUE,
         tab.width =2,
         browser = "/usr/bin/firefox",
-	stringsAsFactor = FALSE
+        stringsAsFactor = FALSE,
+	max.print = 199
 )
 
 local({

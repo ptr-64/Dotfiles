@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/iyer/Documents/UGA/ScndYrPpr/2021-09-17-final-draft'
 let g:netrw_dirhist_5='/Users/iyer/Documents/UGA/ScndYrPpr/2021-07-26-gllnt2020-extnsn'
 let g:netrw_dirhist_4='/home/iyer/Documents/UGA/scnd_yr_ppr/.git'
 let g:netrw_dirhist_3='/home/iyer/Documents/UGA/2021_RAship/2021-06-04-ganong2020unemployment-repl'
