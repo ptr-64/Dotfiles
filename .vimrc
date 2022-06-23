@@ -36,7 +36,7 @@ set wildmenu
 " Show the partial command as I type
 set showcmd
 "set tab = 4 <spaces>
-set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab 
+set tabstop=8 softtabstop=8 expandtab shiftwidth=4 smarttab autoindent smartindent
 " increase memory
 set maxmempattern=2000
 " use pastemode
@@ -172,13 +172,23 @@ Plug 'vim-pandoc/vim-pandoc'  | Plug 'vim-pandoc/vim-pandoc-syntax'
 " include support for rmarkdown
 Plug 'vim-pandoc/vim-rmarkdown'
 
+" add language syntax support
+Plug 'sheerun/vim-polyglot'
+
 " and also add latex support
 Plug 'lervag/vimtex'
-" let g:vimtex_view_method = 'preview'
+let g:vimtex_view_method="skim"
 let g:tex_flavor="latex"
 
 " Add julia support
 Plug 'JuliaEditorSupport/julia-vim'
+
+" Nvim-r support
+"Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+
+" Add linting support
+Plug 'dense-analysis/ale'
+
 " Initialize plugin system
 call plug#end()
 

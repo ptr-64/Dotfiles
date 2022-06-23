@@ -2,11 +2,8 @@
 
 # Install command-line tools using Homebrew.
 
-# Make sure we’re using the latest Homebrew.
-brew update
-
-# Upgrade any already-installed formulae.
-brew upgrade
+# Make sure we’re using the latest Homebrew and upgrade already installed formulae.
+brew update && brew upgrade
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
@@ -17,11 +14,11 @@ brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 export PATH=$PATH:$(brew --prefix coreutils)/libexec/gnubin
 # Install some other useful utilities like `sponge`.
-#brew install moreutils
+brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-#brew install findutils
+brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-#brew install gnu-sed --with-default-names
+brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 #brew install bash
 #brew install bash-completion2
@@ -50,18 +47,22 @@ brew install openssh
 
 # Install essential apps
 brew install pyenv
-brew install tmux
-brew install vim --with-override-system-vim --enable-gui
+brew install pyenv-virtualenv
+#===============================
+# run the following to configure shell environment for pyenv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+#================================
+brew install r
+brew install macvim #--with-override-system-vim --enable-gui
 brew install openconnect
 brew install --cask signal
-brew install --cask r
+brew install --cask skim
 brew install --cask firefox
 brew install --cask mactex # takes a while...
 brew install --cask anki
 brew install --cask rectangle
 brew install --cask bitwarden
-brew install --cask dropbox
-brew install --cask microsoft-remote-desktop
 brew install --cask netnewswire
 brew install --cask inkscape
 

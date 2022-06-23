@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # peter's bash installer
-
+# Fetch the latest version of this file: 
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
 # Now symlink everythin
 #ln -sf /Users/"$USER"/dotfiles/bash/.aliases /Users/"$USER"/.aliases
 #ln -sf /Users/"$USER"/dotfiles/bash/.bash_profile /Users/"$USER"/.bash_profile

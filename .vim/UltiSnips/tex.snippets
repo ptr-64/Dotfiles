@@ -2,10 +2,10 @@
 global !p
 def math():
 	return vim.eval('vimtex#syntax#in_mathzone()') == '1'
-def comment(): 
+def comment():
 	return vim.eval('vimtex#syntax#in_comment()') == '1'
 def env(name):
-	[x,y] = vim.eval("vimtex#env#is_inside('" + name + "')") 
+	[x,y] = vim.eval("vimtex#env#is_inside('" + name + "')")
 	return x != '0' and y != '0'
 endglobal
 
@@ -18,18 +18,18 @@ snippet "" "latex quotes"
 \\blockcquote[${1:p-num}]{${2:citekey}}{${3:text}}
 endsnippet
 
-context "math()"
-snippet EE "exists" iA
-\exists
-endsnippet
+#context "math()"
+#snippet eX "exists" iA
+#\exists
+#endsnippet
+#
+#context "math()"
+#snippet fA "forall" iA
+#\forall
+#endsnippet
 
 context "math()"
-snippet AA "forall" iA
-\forall
-endsnippet
-
-context "math()"
-snippet '([A-Za-z])(II|JJ|KK|LL|MM|NN|TT)' "xn" rwA
+snippet '([A-Za-z])([A-Z]{3})' "xn" rwA
 `!p snip.rv = match.group(1)`_{`!p snip.rv=match.group(2)[0].lower()`$1}
 endsnippet
 
@@ -98,7 +98,7 @@ snippet lmt "Limits"
 endsnippet
 
 context "math()"
-snippet bnm "binomials" 
+snippet bnm "binomials"
 \binom{$1}{$2}
 endsnippet
 
@@ -123,12 +123,12 @@ snippet '([A-Za-z])(\d+)' "auto subscript2" wrA
 endsnippet
 
 context "math()"
-snippet >> "rightarrow" wA
+snippet @>> "rightarrow" wA
 \xrightarrow[$1]{$2}$0
 endsnippet
 
 context "math()"
-snippet @>> "Rightarrow" wA
+snippet >> "Rightarrow" wA
 \Rightarrow
 endsnippet
 
@@ -161,8 +161,8 @@ snippet "((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*|\ )(vct)" "vector" ri
 endsnippet
 
 snippet bmat "bmat" iA
-\begin{bmatrix} 
-$1 
+\begin{bmatrix}
+$1
 \end{bmatrix}$0
 endsnippet
 

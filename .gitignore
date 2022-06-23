@@ -16,9 +16,10 @@
 *.csv*
 *.xml
 *.dta*
-*.dat
+*.dat*
 *.sql
-
+*.rds
+*.RData
 # Folder view files
 .DS_Store
 Desktop.ini

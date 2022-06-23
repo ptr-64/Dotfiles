@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/iyer/Documents/UGA/ECON2105'
+let g:netrw_dirhist_9='/Users/iyer/Documents/UGA/min_wage_thru_ui/UI_benefits/analysis/scripts'
+let g:netrw_dirhist_8='/Users/iyer/Documents/UGA/iyerkang/CODE'
+let g:netrw_dirhist_7='/Users/iyer/Documents/UGA/ScndYrPpr/2021-06-25-gllnt2020tmprry'
 let g:netrw_dirhist_6='/Users/iyer/Documents/UGA/ScndYrPpr/2021-09-17-final-draft'
 let g:netrw_dirhist_5='/Users/iyer/Documents/UGA/ScndYrPpr/2021-07-26-gllnt2020-extnsn'
 let g:netrw_dirhist_4='/home/iyer/Documents/UGA/scnd_yr_ppr/.git'
