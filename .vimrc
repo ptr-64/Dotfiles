@@ -145,10 +145,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-" Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 
 " Any valid git URL is allowed
-" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'ptr-64/vim-snippets' 
@@ -170,7 +170,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-pandoc/vim-pandoc'  | Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " include support for rmarkdown
-Plug 'vim-pandoc/vim-rmarkdown'
+"Plug 'vim-pandoc/vim-rmarkdown'
 
 " add language syntax support
 Plug 'sheerun/vim-polyglot'
