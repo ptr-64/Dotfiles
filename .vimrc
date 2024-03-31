@@ -112,7 +112,18 @@ inoremap jk <esc>
 "inoremap OC <right>
 "inoremap OA <up>
 "inoremap OB <down>
-
+"
+"Activate junegunn-easy-align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+"
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+"
+"
+"
+"
+"
 augroup ausave
 	autocmd!
 	autocmd Filetype * :autocmd! CursorHold <buffer> :update
@@ -163,7 +174,7 @@ let g:UltiSnipsEditSplit="vertical"
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " add support for pandoc and pandoc-syntax
@@ -188,6 +199,9 @@ Plug 'JuliaEditorSupport/julia-vim'
 
 " Add linting support
 Plug 'dense-analysis/ale'
+
+" Plug trasnpose
+Plug 'https://github.com/salsifis/vim-transpose'
 
 " Initialize plugin system
 call plug#end()

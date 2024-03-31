@@ -40,13 +40,13 @@ endsnippet
 
 priority 100
 context "math()"
-snippet '(?<!\\|[a-z])(ln|infty|log|exp|because|therefore|forall|iff|ne|succ|succeq|plim|in|lim|sim|ge|le|exists|times)' "ln" wrA
+snippet '(?<!\\|[a-z])(ln|infty|log|exp|because|therefore|forall|iff|ne|succ|succeq|plim|in|lim|sim|ge|le|exists|times|subset)' "ln" wrA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
 priority 200
 context "math()"
-snippet '(?<!\\)(sin|cos|arccot|cot|csc|arcsin|arccos|arctan|arccot|arcsc|star|perp|indp|equiv|max|min|cdot|contra)' "ln2" rwA
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|arcsin|arccos|arctan|arccot|arcsc|star|perp|indp|equiv|max|min|cdot|contra|lor|land|neg)' "ln2" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
@@ -232,4 +232,14 @@ ${3: HINT: eg \input{path/to/input.tex}, or \addbibresource, or \usepackage[disa
 $0
 
 \end{document}
+endsnippet
+
+snippet rszbox "resizebox"
+\resizebox{${1:0.0-1.0}\textwidth}{!}{%
+${2:your tabular}
+}%
+endsnippet
+
+snippet tcite "textcite"
+\textcite[$1]{$2}$0
 endsnippet

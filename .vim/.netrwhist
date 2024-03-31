@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/iyer/Documents/UGA/BAM_work'
+let g:netrw_dirhist_0='/Users/iyer/Documents/UGA/BAM_work/writeup/Ljungqvist and Sargent 1998'
+let g:netrw_dirhist_9='/Users/iyer/Documents/UGA/BAM_work'
 let g:netrw_dirhist_8='/Users/iyer/Documents/UGA/schmutte_rodrigues_iyer'
 let g:netrw_dirhist_7='/Users/iyer/Documents/UGA'
 let g:netrw_dirhist_6='/Users/iyer/Documents/UGA/schmutte_rodrigues_iyer'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_5='/Users/iyer/Documents/UGA/BAM_work'
 let g:netrw_dirhist_4='/Users/iyer/Documents/UGA/BAM_work/writeup'
 let g:netrw_dirhist_3='/Users/iyer/Documents/UGA/BAM_work'
 let g:netrw_dirhist_2='/Users/iyer/Documents/UGA/ECON2105'
-let g:netrw_dirhist_1='/Users/iyer/Documents/UGA'
-let g:netrw_dirhist_0='/Users/iyer/Documents/UGA/ECON2105'
-let g:netrw_dirhist_9='/Users/iyer/Documents/UGA/min_wage_thru_ui/UI_benefits/analysis/scripts'

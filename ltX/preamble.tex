@@ -2,16 +2,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage{csquotes}
+\usepackage[autostyle]{csquotes}
 \usepackage{graphicx}
 \usepackage{xurl}
+\usepackage[]{hyperref} 
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage[]{tabulary} 
 \usepackage{enumitem}
 \usepackage[]{microtype} 
-\usepackage[style=apa]{biblatex} 
+\usepackage[style=apa,uniquename=false]{biblatex} 
 \usepackage[]{adjustbox} 
+\usepackage[]{subcaption} 
+\usepackage[font={small}]{caption} 
+\usepackage[x11names,table]{xcolor} 
 
 % and some packages for math
 \usepackage{siunitx}
@@ -37,9 +41,10 @@
     \import{./figures/}{#1.pdf_tex}}
 
 % add a few macros 
-\DeclareMathOperator*{\argmax}{argmax}
-\DeclareMathOperator*{\argmin}{argmin}
-\DeclareMathOperator*{\plim}{\mathit{p}-lim}
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\plim}{\mathit{p}-lim}
+\DeclareMathOperator{\EX}{\mathbb{E}}
 % add fancy contradition symbol
 \usepackage{stmaryrd} % for \lightning
 \newcommand\contra{\scalebox{1.5}{$\lightning$}}
